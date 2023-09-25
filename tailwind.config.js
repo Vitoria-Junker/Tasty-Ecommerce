@@ -27,7 +27,8 @@ module.exports = {
       },
       backgroundColor: {
         'easy': '#F0BB00',
-        'brown':'#492a0e'    
+        'brown':'#492a0e',
+        'bege':'#f2ebc9',    
         },
       textColor: {
         'brown':'#492a0e',

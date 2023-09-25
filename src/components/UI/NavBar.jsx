@@ -6,14 +6,14 @@ export default function Menu () {
         <div className="w-full custom:hidden">
                 <ul className="flex justify-center  gap-6 font-semibold mt-8 text-brown">
                     <li>
-                        <Link href="#" >
+                        <Link href="/" >
                             <span className="menu-i text-base transition-transform px-2 rounded">
                                 Home
                             </span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" >
+                        <Link href="/emporium" >
                             <span className="menu-i text-base transition-transform px-2 rounded">
                                 Empório
                             </span>

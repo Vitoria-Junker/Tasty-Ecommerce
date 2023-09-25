@@ -10,14 +10,14 @@ export default function () {
                 
                 <ul className="hidden custom:flex gap-6 font-semibold text-brown">
                     <li>
-                        <Link href="#" >
+                        <Link href="/" >
                             <span className="menu-i text-base transition-transform px-2 rounded">
                                 Home
                             </span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" >
+                        <Link href="/emporium" >
                             <span className="menu-i text-base transition-transform px-2 rounded">
                                 Empório
                             </span>

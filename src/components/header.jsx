@@ -1,5 +1,4 @@
-"use client";
-import { useState } from "react";
+"use client"
 import Link from "next/link";
 import { FaRegUserCircle } from 'react-icons/fa';
 import { HiOutlineShoppingBag } from 'react-icons/hi'
@@ -9,15 +8,21 @@ import { TbMenu2 } from 'react-icons/tb';
 import Menu from "./UI/NavBar";
 
 export default function Header () {
-    const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-    const toggleMenu = () => {
-     setIsMenuVisible(!isMenuVisible);
+    const toggleMenu = () => {    
+        isMenuVisible = !isMenuVisible;
+        const menu = document.getElementById("menu");
+
+        if (isMenuVisible) {
+            menu.classList.remove("hidden");
+        } else {
+            menu.classList.add("hidden");
+        };
     }
 
     return (
         <>
-                    <div className="bg-easy flex flex-col  w-full py-4 px-4 sm:px-8 text-center items-center">
+        <div className="bg-easy flex flex-col  w-full py-4 px-4 sm:px-8 text-center items-center">
             <div className="w-80 flex justify-center">
                 <img src="tasty-logo.png" className=""/>
             </div>
@@ -50,7 +55,9 @@ export default function Header () {
             </div>
             
         </div>
-        {isMenuVisible && <Menu />}
+        <div id="menu" className="hidden">
+                <Menu />
+        </div>
         </>
 
     )

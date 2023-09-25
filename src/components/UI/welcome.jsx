@@ -1,13 +1,14 @@
-import Link from "next/link"
+import Link from "next/link";
+import Carousel from "./Carrousel";
 
 export default function Welcome () {
     return (
         <div className="w-full bg-yellow flex flex-wrap">
-            <div className="flex flex-col justify-center items-center md:w-1/2 gap-12 p-12"
+            <div className="flex flex-col justify-center text-center custom:text-start custom:w-1/2 gap-12 p-12"
             
             >
                 <div>
-                    <h2 className="text-center md:text-start leading-relaxed text-3xl md:text-5xl text-brown">
+                    <h2 className=" leading-relaxed text-3xl md:text-5xl text-brown">
                         Bem vindo à nossa seleção cuidadosamente
                         curada de sabores excepcionais.
                     </h2>
@@ -18,8 +19,8 @@ export default function Welcome () {
                     </span>
                 </Link>
             </div>
-            <div className="md:w-1/2 ">
-                <img src="pizza.svg"/>
+            <div className="w-full custom:w-1/2 ">
+                 <Carousel /> 
             </div>
         </div>
     )
