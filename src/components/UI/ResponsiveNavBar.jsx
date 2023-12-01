@@ -1,7 +1,7 @@
 import Link from "next/link";
-import styles from '../../app/globals.css'
+import styles from '../../app/globals.css';
 
-import NavBar from "./NavBar";
+//import NavBar from "./NavBar";
 
 export default function () {
 

@@ -1,9 +1,8 @@
-import HeaderEmporium from "@/components/headerEmporium";
-
+import MenuEmporium from "@/components/menuEmporium"
 export default function Pizza () {
     return (
         <div>
-            <HeaderEmporium/>
+            <MenuEmporium/>
             <div>
                 AQUI TEM PIZZA 
             </div>

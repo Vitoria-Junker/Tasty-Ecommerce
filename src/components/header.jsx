@@ -1,24 +1,14 @@
-"use client"
+"use client";
+
 import Link from "next/link";
 import { FaRegUserCircle } from 'react-icons/fa';
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import SearchBar from "./UI/SearchBar";
 import ResponsiveNavBar from "./UI/ResponsiveNavBar";
-import { TbMenu2 } from 'react-icons/tb';
 import Menu from "./UI/NavBar";
+import MenuButton from "./UI/MenuButton";
 
 export default function Header () {
-
-    const toggleMenu = () => {    
-        isMenuVisible = !isMenuVisible;
-        const menu = document.getElementById("menu");
-
-        if (isMenuVisible) {
-            menu.classList.remove("hidden");
-        } else {
-            menu.classList.add("hidden");
-        };
-    }
 
     return (
         <>
@@ -26,25 +16,21 @@ export default function Header () {
             <div className="w-80 flex justify-center">
                 <img src="tasty-logo.png" className=""/>
             </div>
-
             <div className="flex flex-wrap justify-between w-full items-center">
-
-                <button onClick={toggleMenu} className="custom:hidden mt-8 text-brown">
-                    <TbMenu2 className="h-8 w-8 mob:h-10 mob:w-10"/>
-                </button>
-                 <ResponsiveNavBar/>
+                <MenuButton />
+                <ResponsiveNavBar/>
                 <div>
                     <ul className="flex gap-3 mt-8 md:w-[22rem] justify-end">
                         <SearchBar />
                         <li>
-                            <Link href="#" >
+                            <Link href="/Login" >
                                 <span className="text-brown p-2 bg-white w-8 h-8 mob:h-10 mob:w-10 rounded-full flex justify-center items-center transition-transform hover:scale-90">
                                     <FaRegUserCircle className="w-4 h-4" />
                                 </span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" >
+                            <Link href="/checkout" >
                                 <span className="text-brown p-2 bg-white w-8 h-8 mob:h-10 mob:w-10 rounded-full flex justify-center items-center transition-transform hover:scale-90">
                                     <HiOutlineShoppingBag className="w-4 h-4" />
                                 </span>
@@ -53,12 +39,10 @@ export default function Header () {
                     </ul>
                 </div>
             </div>
-            
         </div>
         <div id="menu" className="hidden">
-                <Menu />
+            <Menu />
         </div>
         </>
-
     )
 }

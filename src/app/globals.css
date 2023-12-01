@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 .menu-i:hover {
-    transform: scale(1.5); 
     box-shadow: 0px 4px 1.5px -1px rgba(106, 66, 23, 0.75);
 }
 

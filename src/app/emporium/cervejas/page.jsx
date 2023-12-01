@@ -1,9 +1,8 @@
-import HeaderEmporium from "@/components/headerEmporium";
-
+import MenuEmporium from "@/components/menuEmporium"
 export default function Cervejas () {
     return (
         <div>
-            <HeaderEmporium/>
+            <MenuEmporium/>
             <div>
                 AQUI TEM CERVEJA 
             </div>

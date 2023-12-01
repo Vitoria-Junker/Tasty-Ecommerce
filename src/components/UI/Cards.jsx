@@ -12,7 +12,6 @@ export default function Cards () {
                 <Card imageUrl="cheese.svg" text="Queijos" linkUrl="#" />
                 <Card imageUrl="drink.svg" text="Bebidas" linkUrl="#" />
             </ul>
-            
         </div>
     )
 }

@@ -1,9 +1,9 @@
-import HeaderEmporium from "@/components/headerEmporium";
+import MenuEmporium from "@/components/menuEmporium";
 
 export default function Emporium () {
     return (
         <div className="w-full h-full">
-            <HeaderEmporium />
+            <MenuEmporium />
             <div>
                 dentro da pagina
                 {/* <Vinhos />

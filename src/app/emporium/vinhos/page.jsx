@@ -1,11 +1,13 @@
-import HeaderEmporium from "@/components/headerEmporium";
+import MenuEmporium from "@/components/menuEmporium"
+import ProductCard from "@/components/UI/ProductCard"
 
 export default function Vinhos () {
     return (
         <div>
-            <HeaderEmporium/>
+            <MenuEmporium/>
             <div>
                 AQUI TEM VINHOS 
+                <ProductCard/>
             </div>
         </div>
     )
